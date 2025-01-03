@@ -1,0 +1,46 @@
+.cont {
+    height: 35vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.adminDash nav {
+    position: absolute;
+    bottom: 20px; 
+    text-align: center; 
+  }
+  
+  .adminDash ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .adminDash li {
+    margin: 10px 0;
+  }
+  
+  .adminDash a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 10px 20px;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .adminDash a:hover {
+    background-color: #222222;
+    color: white;
+  }
+
+  @media (max-width: 480px) {
+    .adminDash ul {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
