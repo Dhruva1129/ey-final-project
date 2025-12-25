@@ -13,7 +13,7 @@ const SignUp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/auth/signup', {
+      const res = await axios.post('https://ey-final-project-1.onrender.com/auth/signup', {
         username,
         email,
         password,
@@ -56,3 +56,4 @@ const SignUp = () => {
 };
 
 export default SignUp;
+
