@@ -30,7 +30,7 @@ const AddProduct = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/adddelete/add", {
+      const response = await fetch("https://ey-final-project-1.onrender.com/adddelete/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -124,3 +124,4 @@ const AddProduct = () => {
 };
 
 export default AddProduct;
+
