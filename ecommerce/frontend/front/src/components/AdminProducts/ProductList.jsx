@@ -15,7 +15,7 @@ const ProductList = () => {
   const fetchProducts = async () => {
     const token = localStorage.getItem("authToken");
     try {
-      const response = await fetch("http://localhost:5000/adddelete", {
+      const response = await fetch("https://ey-final-project-1.onrender.com/adddelete", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -36,7 +36,7 @@ const ProductList = () => {
     const token = localStorage.getItem("authToken");
     try {
       const response = await fetch(
-        `http://localhost:5000/adddelete/delete/${customId}`,
+        `https://ey-final-project-1.onrender.com/adddelete/delete/${customId}`,
         {
           method: "DELETE",
           headers: {
@@ -75,7 +75,7 @@ const ProductList = () => {
     const token = localStorage.getItem("authToken");
     try {
       const response = await fetch(
-        `http://localhost:5000/adddelete/update/${updatedProduct.customId}`,
+        `https://ey-final-project-1.onrender.com/adddelete/update/${updatedProduct.customId}`,
         {
           method: "PUT",
           headers: {
@@ -190,3 +190,4 @@ const ProductList = () => {
 };
 
 export default ProductList;
+
