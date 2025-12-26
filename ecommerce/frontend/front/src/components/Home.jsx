@@ -20,7 +20,7 @@ const Home = () => {
         </section>
         <section className="homepage__right">
           <img
-            src="src/assets/electronic.jpg"
+            src="https://miro.medium.com/1*Q-NqsYO87B1VMdgTiO0JfQ.jpeg"
             alt="Electronics"
             className="electronicsImage"
           />
@@ -73,6 +73,7 @@ const Home = () => {
     </>
   );
 };
+
 
 
 export default Home;
